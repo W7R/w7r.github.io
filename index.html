@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welds & Rivets</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A MSFS module developer">
+    <meta name="keywords" content="B-25, Simulator, MSFS, MSFS2020, MSFS2024, Microsoft, Flight, Simulator, Warbirds, B25">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Welds & Rivets">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://w7r-games.com/">
+    <meta property="og:image" content="https://w7r-games.com/og-image.jpg">
+    <meta property="og:description" content="A MSFS module developer">
+    <meta property="og:site_name" content="Welds & Rivets">
+    <meta property="og:locale" content="en_US">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        * { margin: 0; padding: 0; }
+        html, body { 
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            font-family: "Inter", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            color: white;
+            overflow: auto;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .centered-logo {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 100;
+          max-width: 980px;
+          height: auto;
+          text-align: center;
+        }
+
+		h2 {
+			margin-top: 50px;
+			font-weight: normal;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			animation-delay: 0.5s;
+		}
+
+        p {
+            margin-top: 50px;
+            font-size: 1.2em;
+            margin-bottom: 200px;
+            line-height: 1.5em;
+            animation-delay: 1s;
+        }
+
+        .logo {
+            max-width: 200px!important;
+            margin-top: 100px;
+            animation-delay: 0s;
+        }
+        
+        .b25 {
+            max-width: 400px!important;
+            margin-top: 50px;
+            animation-delay: 0.8s;
+        }
+
+        @media (max-width: 767px) {
+            .video-background {
+                display: none;
+            }
+            .centered-logo img {
+                width: 100%;
+                height: auto;
+            }
+            .centered-logo {
+                margin-top: 100px;
+                width: 90%;
+                left: 5%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .score {
+            max-width: 980px;
+            margin: auto;
+            position: absolute;
+            bottom: 20px;
+            margin-top: 80px;
+            height: auto;
+            width: 100%;
+            z-index: 99!important;
+        }
+
+        .centered-logo > * {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        .centered-logo img.logo {
+            animation-delay: 0s;
+        }
+
+        .centered-logo h2 {
+            animation-delay: 0.5s;
+        }
+
+        .centered-logo img.b25 {
+            animation-delay: 0.8s;
+        }
+
+        .centered-logo p {
+            animation-delay: 1s;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="centered-logo">
+    <img class="logo fade-in" src="logo.svg" alt="Logo"/>
+    <h2 class="fade-in">A Microsoft Flight Simulator Module</h2>
+    <img class="b25 fade-in" src="b25.svg" alt="Logo"/>
+	<p class="fade-in">The upcoming B-25J module for Microsoft Flight Simulator promises to deliver the ultimate experience of flying one of World War II's most iconic medium bombers. Currently in development, this project aims to capture the spirit of the classic warbird with meticulous attention to historical accuracy. From the roar of the twin Wright R-2600 engines to an intricately modeled cockpit with authentic instruments, every detail is being crafted to immerse pilots in the era. Once complete, it will offer a breathtaking opportunity to experience the power, precision, and legacy of the legendary B-25J in stunning virtual skies</p>
+</div>
+
+</body>
+</html>
